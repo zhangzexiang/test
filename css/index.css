@@ -1,0 +1,242 @@
+
+
+*{
+  margin: 0 auto;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+main{
+    width: 1161px;height: 785px;
+    background-color: #ffffff;
+}
+
+/*常用自助服务
+-----------------------------------*/
+
+.box01{
+    width: 100%;
+    height: 221px;
+    /*background-color: #85ff44;*/
+}
+
+
+.box01 .box01-service{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+.box01 .box01-service h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #382d2b;
+}
+.box01 .box01-service h3{
+
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #556356;
+    cursor: pointer;
+}
+
+.box01 .box01-service h3:hover{
+
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f9a518;
+}
+
+
+.box01 .box01-service p{
+    font-size: 12px;
+    color: #b5b6b1;
+    cursor: pointer;
+}
+
+.box01 .box01-service p:hover{
+    font-size: 12px;
+    color: #f9a518;
+    text-decoration: underline;
+}
+
+
+
+.box01 .box01-service li{
+    margin-top: 10px;
+    width: 240px;
+    height: 70px;
+    float: left;
+}
+
+.box01-service .ico{
+    width: 61px;
+    height: 61px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+
+
+.box01-service .ico01{
+    background: url("../image/dsicon01.jpg") no-repeat center right;
+}
+.box01-service .ico02{
+    background: url("../image/dsicon02.jpg") no-repeat center right;
+}
+.box01-service .ico03{
+    background: url("../image/dsicon03.jpg") no-repeat center right;
+}
+.box01-service .ico04{
+    background: url("../image/dsicon04.jpg") no-repeat center right;
+}
+.box01-service .ico05{
+    background: url("../image/dsicon05.jpg") no-repeat center right;
+}
+.box01-service .ico06{
+    background: url("../image/dsicon06.jpg") no-repeat center right;
+}
+.box01-service .ico07{
+    background: url("../image/dsicon07.jpg") no-repeat center right;
+}
+.box01-service .ico08{
+    background: url("../image/dsicon08.jpg") no-repeat center right;
+}
+
+
+/*热点问题
+-----------------------------------*/
+.box02{
+    width: 100%;
+    height: 600px;
+    background-color: #f9f9f9;
+}
+
+
+.box02 .box02-question{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+}
+.box02 .box02-question h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #382d2b;
+}
+
+
+
+
+#cen_right_top{
+    width: 100%;
+    margin: 18px auto 0 auto;
+}
+#cen_right_top .active{
+    background-color: #f3b701;
+    color: #F3F3F3;
+    position: relative;
+}
+
+#cen_right_top .active>i{
+    width: 10px;
+    height: 7px;
+    background: #ff241c;
+    background: url("../image/ico03.png");
+    position: absolute;
+    top: 46px;
+    left: 70px;
+}
+
+#cen_right_top h3{
+    width: 151px;
+    height: 46px;
+    text-align: center;
+    color: #5d4f4c;
+    font:15px/46px Arial, Helvetica, sans-serif, "新宋体";
+    font-weight: bolder;
+    background-color: #e9e9e9;
+
+    cursor: pointer;
+    float: left;
+    margin-right: 15px;
+    padding: 0;
+}
+#cen_right_top div{
+    font-size: 14px;
+    display: none;
+    clear: both;
+    height: 235px;
+    width: 992px;
+    padding: 20px 0px 0px 20px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+#cen_right_top div ul{
+    list-style-image:url("../image/love.png") ;
+}
+
+
+#cen_right_top div li{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#cen_right_top div a:hover{
+    color: #f9a518;
+}
+
+#cen_right_top div a{
+    color: #605655;
+
+}
+
+/*说明*/
+.box-link{
+    width: 97%;
+    height: 184px;
+    /*background-color: pink;*/
+    float: left;
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 0 0 0;
+
+
+}
+
+.box-link .g,.d,.t {
+    width: 300px;
+    height: 184px;
+    background-color: #f1f1f1;
+    float: left;
+    margin: 0;
+    border: 2px solid #eaeaea;
+}
+
+
+.box-link h3{
+    font-size: 14px;
+    color: grey;
+    margin: 20px 0 10px 20px;
+}
+
+.box-link ul{
+    width: 40%;
+    height: 70%;
+    /*background-color: #da4453;*/
+    float: left;
+    margin-left:20px;
+}
+
+.box-link ul a{
+    font-size: 12px;
+    color: #4fbbea;
+}
+
+.box-link ul a:hover{
+    color: #f9a518;
+}
