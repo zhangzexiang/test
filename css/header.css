@@ -1,0 +1,25 @@
+header {
+  color: #757575;
+  font: normal 12px Microsoft YaHei;
+}
+.wf-wrap {
+  line-height: 40px;
+  background-color: #e0e0e0;
+}
+.wf-wrap-ico i {
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.header-logo {
+  padding-left: 0;
+  padding-right: 0;
+  background: url("../img/bg.jpg");
+}
+.header-logo .carousel-caption {
+  top: 225px;
+}
+.header-logo .carousel-caption h4 {
+  font-size: 60px;
+}
+/*# sourceMappingURL=header.css.map */

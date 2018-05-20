@@ -1,0 +1,146 @@
+
+
+
+
+/*
+* 模块化
+*/
+//@import "footer.less";
+//@import "header.less";
+
+
+
+
+// 字体样式
+.rounded-corners (@color: #757575,@font:normal 12px Microsoft YaHei) {
+  color:@color;
+  font:@font;
+}
+
+header {
+  .rounded-corners;
+}
+
+
+
+
+footer {
+  //.rounded-corners(10px,100px,blue);
+}
+
+
+
+
+//产品推荐
+.product-recommendation{
+
+  .product-img{
+    overflow: hidden;
+    margin-top: 20px;
+
+    img{
+      //width: 100%;
+      //border: 1px solid rgba(128, 128, 128, 0.42);
+      cursor: pointer;
+    }
+
+  }
+}
+
+
+
+
+
+//main
+
+//今日上新
+main{
+
+  //今日上新的头部
+  .product-title{
+
+      h3{
+        float: left;
+        padding-bottom: 2px;
+        border-bottom: 2px solid grey;
+      }
+
+      .product-more{
+        .rounded-corners;
+        float: right;
+        width: 92px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        display: block;
+        border: 1px solid #6e6e6e;
+        margin-top:15px;
+        cursor: pointer;
+      }
+
+    .product-more:hover{
+      animation:myfirst 1s;
+      -webkit-animation:myfirst 1s; /* Safari and Chrome */
+    }
+
+    @keyframes myfirst
+    {
+      from {background-color: #ffffff;color: #757575;}
+      to {background-color: #0C0000;color: white;}
+    }
+  }
+
+
+  //今日上新的产品内容
+  .product-content{  cursor: pointer;  }
+
+
+
+
+
+
+//花语
+  .flower-language{
+    .row{
+      background: url("../img/banner2.jpg");
+
+    .content{
+      padding-left: 0;
+      padding-right: 0;
+
+      .thumbnail{margin-bottom: 0;
+
+          p{.rounded-corners;}
+      }
+    }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

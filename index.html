@@ -1,180 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>物流查询表单</title>
-    <link rel="stylesheet" href="css/common.css">
+    <title>花语</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!--<script src="js/less.js"></script>-->
+    <!--<link rel="stylesheet" href="less/index.less">-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--字体图标链接-->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+
+    <!--兼容(小于ie9加载js文件)-->
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+
+
 </head>
 <body>
-    <main>
-        <!--常用自助服务-->
-        <div class="box01">
-            <div class="box01-service">
-                <h2>常用自助服务</h2>
 
-                <ul>
-                    <li><i class="ico ico01"></i><h3>查询订单</h3><p>快速查看订单详情、配送进度、确认收货等</p></li>
-                    <li><i class="ico ico02"></i><h3>我要催单</h3><p>催发货、催配送、1小时快速答复</p></li>
-                    <li><i class="ico ico03"></i><h3>配送服务查询</h3><p>查看您所在地址支持的配送服务类型和时效</p></li>
-                    <li><i class="ico ico04"></i><h3>查询售后政策</h3><p>查看退换货、维修规则、处理流程</p></li>
-                    <li><i class="ico ico05"></i><h3>申请退换货</h3><p>快速提交退换货、维修申请、查看处理进度、退款记录</p></li>
-                    <li><i class="ico ico06"></i><h3>查询余额</h3><p>查询账户余额、消费记录、退款明细、余额充值</p></li>
-                    <li><i class="ico ico07"></i><h3>取消订单</h3><p>申请取消订单、终止发货（限自营商品）</p></li>
-                    <li><i class="ico ico08"></i><h3>账户安全</h3><p>修改密码、绑定手机、提高账户安全等</p></li>
-                </ul>
+
+<header>
+    <!--头部-抬头-->
+    <div class="wf-wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container">
+                <div class="col-lg-6 col-md-6">
+                    <span><i class="glyphicon glyphicon-time"></i>在线时间 08:30~21:30</span>
+                    <span class="col-lg-offset-1">欢迎访问花语在线商城</span>
+                </div>
+
+                <div class="col-lg-6 col-md-6 text-right wf-wrap-ico">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <i class="glyphicon glyphicon-user"></i>
+                    <i class="glyphicon glyphicon-lock"></i>
+                </div>
             </div>
+    </div>
+
+
+    <!--头部logo 导航栏-->
+    <div class="header-logo col-lg-12 col-md-12">
+        <!--logo-->
+        <div class="container text-center">
+            <a href=""><img src="img/logo.png" alt=""></a>
         </div>
-        <!--热点问题-->
-        <div class="box02">
-            <div class="box02-question">
-                <h2>热点问题</h2>
 
-                <!--选项卡-->
-                <div id="cen_right_top">
-                    <h3 class="active"><i></i>购买咨询</h3>
-                    <h3><i></i>配送查询</h3>
-                    <h3><i></i>付款及退款</h3>
-                    <h3><i></i>售后规则</h3>
-                    <h3><i></i>账户与资产</h3>
-                    <h3><i></i>其他</h3>
-                    <!--购买咨询-->
-                    <div style="display:block">
-                        <ul>
-                            <li><a href="javascript:void(0)">下单后可以修改订单吗？</a></li>
-                            <li><a href="javascript:void(0)">无货商品几天可以到货？</a></li>
-                            <li><a href="javascript:void(0)">合约机资费如何计算？</a></li>
-                            <li><a href="javascript:void(0)">可以开发票吗？</a></li>
-                        </ul>
+        <!--menu-->
+        <div class="container">
 
-                        <ul>
-                            <li><a href="javascript:void(0)">订单如何取消？</a></li>
-                            <li><a href="javascript:void(0)">合约机是什么？</a></li>
-                            <li><a href="javascript:void(0)">如何联系商家？</a></li>
-                        </ul>
+            <nav class="menu navbar navbar-default " role="navigation">
 
+                <div class="container-fluid header-menu">
+                    <div class="navbar-header">
 
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand nav-logo" href="#"><span >首页</span></a>-->
                     </div>
 
-                    <!--配送查询-->
-                    <div>
-                        <ul>
-                            <li><a href="javascript:void(0)">什么是隔日达？</a></li>
-                            <li><a href="javascript:void(0)">我所在的地区支不支持定时达服务？</a></li>
-                            <li><a href="javascript:void(0)">定时达有没有运费？运费是多少？</a></li>
-                            <li><a href="javascript:void(0)">我的收货地址支不支持大家电211配送？</a></li>
-                        </ul>
 
-
-                    </div>
-                    <!--付款及退款-->
-                    <div>
-                        <ul>
-                            <li><a href="javascript:void(0)">取消订单/退货后怎么退款？</a></li>
-                            <li><a href="javascript:void(0)">退款怎么查询?</a></li>
-                            <li><a href="javascript:void(0)">退换货逆向运费补偿标准(1)</a></li>
-                            <li><a href="javascript:void(0)">退换货逆向运费补偿标准(3)</a></li>
-                            <li><a href="javascript:void(0)">退款为什么少退款了？</a></li>
-                            <li><a href="javascript:void(0)">退款要收手续费吗？</a></li>
-
-                        </ul>
-                    </div>
-                    <!--售后规则-->
-                    <div>
-                        <ul>
-                            <li><a href="javascript:void(0)">什么情况下可以退换货/维修？</a></li>
-                            <li><a href="javascript:void(0)">京东自营上门取件收费标准及收费方式</a></li>
-                            <li><a href="javascript:void(0)">京东自营商品售后服务细则是什么？</a></li>
-                            <li><a href="javascript:void(0)">如果退货的话，是什么流程呢</a></li>
-                            <li><a href="javascript:void(0)">包装拆开了还能退换货吗？</a></li>
-                            <li><a href="javascript:void(0)">订单已收到，但缺少赠品，怎么办？</a></li>
-                            <li><a href="javascript:void(0)">我买的商品缺少说明书和保修卡，我该怎么办？</a></li>
-                        </ul>
-
-                    </div>
-
-                    <!--账户与资产-->
-                    <div>
-                        <ul>
-                            <li><a href="javascript:void(0)">如何使用优惠券？</a></li>
-                            <li><a href="javascript:void(0)">我的余额/白条怎么查看？</a></li>
-                            <li><a href="javascript:void(0)">什么是运费券？</a></li>
-                            <li><a href="javascript:void(0)">运费劵怎么使用？</a></li>
-                            <li><a href="javascript:void(0)">什么是平台专享劵？</a></li>
-                            <li><a href="javascript:void(0)">优惠券如何在优惠券分享圈中好友共享？</a></li>
-                            <li><a href="javascript:void(0)">有哪些人可以参与优惠券分享圈活动？</a></li>
-                        </ul>
-                    </div>
-
-                    <!--特色服务-->
-                    <div>
-                        <ul>
-                            <li><a href="javascript:void(0)">京东全球购介绍</a></li>
-                            <li><a href="javascript:void(0)">什么是价格保护？</a></li>
-                            <li><a href="javascript:void(0)">什么是夺宝岛？</a></li>
-                            <li><a href="javascript:void(0)">DIY装机服务购买入口</a></li>
-                            <li><a href="javascript:void(0)">京东E卡如何绑定？</a></li>
-                            <li><a href="javascript:void(0)">购机入网送话费是什么意思？</a></li>
-                            <li><a href="javascript:void(0)">大家电可以上门安装吗？</a></li>
+                    <div class=" collapse navbar-collapse " id="example-navbar-collapse">
+                        <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12">
+                            <li class="col-lg-offset-4 col-md-offset-4 col-sm-offset-3"><a href="#"> 商城首页 </a></li>
+                            <li><a href="allGoods.html"> 所有商品 </a></li>
+                            <li><a href="allGoods.html"> 支付方式  </a></li>
+                            <li><a href="allGoods.html"> 关于花语  </a></li>
+                            <li><a href="allGoods.html"> 线下门店  </a></li>
                         </ul>
                     </div>
                 </div>
+            </nav>
 
+        </div>
 
-                <!--说明-->
+        <!--轮播-->
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="carousel slide" id="carousel-271592">  <!--data-interval="3000"  轮播时间-->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-271592">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-271592">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img alt="" src="img/banner1.jpg" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    H U A Y U
+                                </h4>
+                                <p>
 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="img/banner2.jpg" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    张 泽 祥
+                                </h4>
+                                <p>
+                                    这是一个卖植物的网站
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="box-link">
-                    <div class="g">
-                        <h3>购物指南</h3>
-                        <ul>
-                            <li><a href="javascript:void(0)">交易条款</a></li>
-                            <li><a href="javascript:void(0)">购物流程</a></li>
-                            <li><a href="javascript:void(0)">生活旅行团购</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="javascript:void(0)">商品咨询</a></li>
-                            <li><a href="javascript:void(0)">促销咨询</a></li>
-                            <li><a href="javascript:void(0)">大家电常见问题</a></li>
-                        </ul>
                     </div>
-                    <div class="d">
-                        <h3>订单百事通</h3>
-                        <ul>
-                            <li><a href="javascript:void(0)">交易条款</a></li>
-                            <li><a href="javascript:void(0)">购物流程</a></li>
-                            <li><a href="javascript:void(0)">生活旅行团购</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="javascript:void(0)">商品咨询</a></li>
-                            <li><a href="javascript:void(0)">促销咨询</a></li>
-                            <li><a href="javascript:void(0)">大家电常见问题</a></li>
-                        </ul>
-                    </div>
-                    <div class="t">
-                        <h3>特色服务</h3>
-                        <ul>
-                            <li><a href="javascript:void(0)">交易条款</a></li>
-                            <li><a href="javascript:void(0)">购物流程</a></li>
-                            <li><a href="javascript:void(0)">生活旅行团购</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="javascript:void(0)">商品咨询</a></li>
-                            <li><a href="javascript:void(0)">促销咨询</a></li>
-                            <li><a href="javascript:void(0)">大家电常见问题</a></li>
-                        </ul>
-                    </div>
+                    <a class="left carousel-control" href="#carousel-271592" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carousel-271592" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
-
-
-
-
             </div>
         </div>
-        <div class="box03">
+    </div>
 
+
+
+<!--产品推荐-->
+    <div class="product-recommendation col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row">
+                <div class="product-img col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive img-thumbnail" src="img/1.jpg" alt=""></div>
+                <div class="product-img col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive img-thumbnail" src="img/2.jpg" alt=""></div>
+            </div>
         </div>
-    </main>
+    </div>
+
+
+</header>
+
+<main>
+
+    <!--今日上新-->
+    <section class="product-title col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container page-header">
+            <!--<h3 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">今日上新 <small>New product</small></h3>-->
+            <!--<div class="product-more col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right"><span class="button">+查看更多</span></div>-->
+            <h3 class="">今日上新 <small>New product</small></h3>
+            <div class="product-more  text-right">+查看更多</div>
+        </div>
+    </section>
+    <section class="product-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row clearfix">
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+                            <div class="thumbnail">
+                                <img alt="300x200" src="img/3.jpg" />
+                                <div class="caption">
+                                    <h3 class="text-center">植物花卉001</h3>
+                                    <p class="text-center">￥5900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="thumbnail">
+                                <img alt="300x200" src="img/4.jpg" />
+                                <div class="caption">
+                                    <h3 class="text-center">植物花卉001</h3>
+                                    <p class="text-center">￥5900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="thumbnail">
+                                <img alt="300x200" src="img/5.jpg" />
+                                <div class="caption">
+                                    <h3 class="text-center">植物花卉002</h3>
+                                    <p class="text-center">￥5900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="thumbnail">
+                                <img alt="300x200" src="img/6.jpg" />
+                                <div class="caption">
+                                    <h3 class="text-center">植物花卉003</h3>
+                                    <p class="text-center">￥5900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--限时促销-->
+    <section class="product-title col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container page-header">
+            <h3 class="">限时促销 <small>sales promotion</small></h3>
+            <div class="product-more  text-right">+查看更多</div>
+        </div>
+    </section>
+    <section class="product-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row clearfix">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3 class="text-center">103 <span>天</span>22 <span>时</span>26<span>分钟</span> 55<span>秒</span></h3>
+                            </div>
+                            <img alt="300x200" src="img/7.jpg" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="img/8.jpg" />
+                            <div class="caption">
+                                <h3 class="text-center">103 <span>天</span>22 <span>时</span>26<span>分钟</span> 55<span>秒</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!--花语-->
+    <section class="flower-language product-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container-fluid">
+
+                <div class="row">
+                    <div class="content col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-6 col-md-offset-6">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="img/logo.png" />
+                            <div class="caption">
+                                <p>
+                                    我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
+                                    起飞页提供了海量精美网站模板和成品网站，
+                                    起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，
+                                    支持打字传图、自由拖拽，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，
+                                    您可以随心所欲创建区块、添加组件…
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+    </section>
+
+
+
+    <!--装点家园-->
+    <section class="product-title col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container page-header">
+            <h3 class="">装点家园 <small>decorate the homes</small></h3>
+            <div class="product-more  text-right">+查看更多</div>
+        </div>
+    </section>
+    <section class="product-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="img/6.jpg" />
+                            <div class="caption">
+                                <h3 class="text-center">植物花卉001</h3>
+                                <p class="text-center">￥5900</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3 class="text-center">植物花卉001</h3>
+                                <p class="text-center">￥5900</p>
+                            </div>
+                            <img alt="300x200" src="img/5.jpg" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="img/4.jpg" />
+                            <div class="caption">
+                                <h3 class="text-center">植物花卉002</h3>
+                                <p class="text-center">￥5900</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3 class="text-center">植物花卉003</h3>
+                                <p class="text-center">￥5900</p>
+                            </div>
+                            <img alt="300x200" src="img/3.jpg" />
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</main>
+
+<footer></footer>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+/*
+* 模块化
+*/
+@font-face {
+  font-family: 'iconfont';
+  /* project id 536556 */
+  src: url('//at.alicdn.com/t/font_536556_k79yrdkujrhyf1or.eot');
+  src: url('//at.alicdn.com/t/font_536556_k79yrdkujrhyf1or.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_536556_k79yrdkujrhyf1or.woff') format('woff'), url('//at.alicdn.com/t/font_536556_k79yrdkujrhyf1or.ttf') format('truetype'), url('//at.alicdn.com/t/font_536556_k79yrdkujrhyf1or.svg#iconfont') format('svg');
+}
+.footer {
+  background: #F7F7F7;
+  color: #757575;
+  font: normal 12px Microsoft YaHei;
+  margin-top: 50px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer p {
+  width: 60%;
+}
+.footer .footer_top {
+  margin-top: 100px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.footer .footer_top i {
+  font-size: 25px;
+}
+.footer .footer_top .column {
+  margin-bottom: 30px;
+}
+.footer .footer_top li {
+  float: left;
+}
+.footer .footer_top li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.footer .footer_bottom {
+  margin-top: 50px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.footer .footer_word {
+  line-height: 50px;
+}
+header {
+  color: #757575;
+  font: normal 12px Microsoft YaHei;
+}
+.wf-wrap {
+  line-height: 40px;
+  background-color: #e0e0e0;
+}
+.wf-wrap-ico i {
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.header-logo {
+  padding-left: 0;
+  padding-right: 0;
+  background: url("../img/bg.jpg");
+}
+.header-logo .carousel-caption {
+  top: 225px;
+}
+.header-logo .carousel-caption h4 {
+  font-size: 60px;
+}
+main .goods .thumbnail {
+  border: 0;
+}
+main .goods .thumbnail img {
+  padding-top: 40px;
+}
+main .goods .thumbnail .caption h3 {
+  color: #757575;
+  font: normal 16px Microsoft YaHei;
+}
+main .goods .thumbnail .caption p {
+  color: #757575;
+  font: normal 13px Microsoft YaHei;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main .product-content {
+  cursor: pointer;
+}
+main .product-content .container .thumbnail {
+  border: 0;
+}
+main .product-content .container .thumbnail .caption h3 {
+  font-size: 15px;
+}
+main .product-content .container .thumbnail .caption p {
+  color: #757575;
+  font: normal 12px Microsoft YaHei;
+}
+/*# sourceMappingURL=allGoods.css.map */
